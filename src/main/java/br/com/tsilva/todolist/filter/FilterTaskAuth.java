@@ -18,7 +18,7 @@ public class FilterTaskAuth extends OncePerRequestFilter {
     @Autowired
     private IUserRepository userRepository;
 
-
+    // Valida  se  o usuário  esta autenticado ou não, se Estiver  segue o fluxo para o controller por meio do filterChain.doFilter(request, response);
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
