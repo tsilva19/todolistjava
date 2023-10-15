@@ -29,7 +29,7 @@ mvn springboot:run
 #### Como funciona a autenticação
 
 Existe um arquivo de codigo chamado FilterTaskAuth ,  ele faz a captura da requisição antes da camada de controller,
-Ele verifica  se o usuario e senha estão cadastrados no banaco de dados e mediante disso faz a autenticação  e manda
+Ele verifica  se o usuario e senha estão cadastrados no banco de dados e mediante disso faz a autenticação  e manda
 os dados da requisição seguir o fluxo para o controller.
 ## ⚙️ Executando os testes
 
