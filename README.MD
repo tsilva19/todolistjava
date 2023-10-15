@@ -16,24 +16,21 @@ JAVA SDK 17
 INSONMIA(Consumo da api)
 ```
 
-### 🔧 Rodar o Projeto
+### 🔧 Rodar o Projeto e como Funciona a autenticação
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Rodar  a aplicação via terminal:
+Rodar a aplicação via terminal:
 
 ```
 mvn springboot:run
 ```
 
-E repita:
+#### Como funciona a autenticação
 
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
+Existe um arquivo de codigo chamado FilterTaskAuth ,  ele faz a captura da requisição antes da camada de controller,
+Ele verifica  se o usuario e senha estão cadastrados no banaco de dados e mediante disso faz a autenticação  e manda
+os dados da requisição seguir o fluxo para o controller.
 ## ⚙️ Executando os testes
 
 Explicar como executar os testes automatizados para este sistema.
